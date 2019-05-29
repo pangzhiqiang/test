@@ -1,0 +1,33 @@
+date: 显示当前时间 
+cal: 显示日历默认按月份
+cal -y :按年显示日历
+
+cd 目录名 ：切换目录
+cd ~ : 回到起始目录
+cd ..　：回到当前目录的上一层目录
+cd - ：表示回退到刚才所在的目录 例如 当前目录root/a/b   cd root/a/b/c/d   到了  root/a/b/c/d  执行完cd-后回退到 tooy/a/b
+
+poweroff: 立即关机
+shutdown -h 10 :十分钟后关机
+reboot : 重启
+shutdown -r 10(20:35) ：定时重启 10分钟后或者是时间在20:35的时候重启
+
+pwd : 显示当前工作目录
+ls : 列举出当前目录下的文件和文件夹
+mkdir filename : 新建一个文件夹
+mkdir filename1/filename2/ -p :能做到连续创建
+touch filename : 新建一个文件
+mv old_name new_name : 修改文件名称
+mv file /path :复制文件到指定目录
+cat file: 查看文件的内容
+rm file : 删除一个文件或者文件夹
+rm -rf file :删除一个带文件或带文件夹的 文件目录
+cp file file1 : 复制一个文件
+cp -r file file1 : 复制一个文件夹（包含文件夹下的文件）
+
+vi file :修改文件内容（进入文本编辑器）
+    i: 开始编辑文件内容
+    ： ：输入命令
+    wq: 保存并退出
+    q!: 不保存直接退出 
+
