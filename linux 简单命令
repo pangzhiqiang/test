@@ -31,4 +31,14 @@ vi file :修改文件内容（进入文本编辑器
     ： ：输入命令
     wq: 保存并退出
     q!: 不保存直接退出 
-
+权限命令：
+    chmod u(rwx),g(rwx),o(rwx),all(rwx)
+        (u:user所有者 g:group所属组 o:other其他人 a:all所有人)
+        (权限  r:read读4 w；write写2 x:执行1)r对应4 w对应2 x对应1
+    例如：-rwxr--r--. 1 root root 0 5月 29 20:03 test.txt
+        修改权限 ：chmod u-x,g+w,o-r test.txt ————————>-rw-rw----. 1 root root 0 5月 29 20:03 test.txt
+                  chmod 660 test.txt 也可以做到（rw-=4+2,rw-=4+2,---=0）
+    chmod u(rwx),g(rwx),o(rwx),all(rwx) /aa/bb :只能修改aa的权限
+    -R： 递归修改目录下所有文件的权限
+    chmod -R u(rwx),g(rwx),o(rwx),all(rwx) /aa/bb :可以递归修改a下面所有文件的权限
+    删除一个文件的条件是对该文件所在目录有写的（w）权限 只对该文件有写（w）的权限是无法删除该文件的
